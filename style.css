@@ -462,10 +462,10 @@ body {
   .reveal-main { font-size: clamp(40px, 15vw, 90px); }
   .reveal-sub {
     max-width: 94vw;
-    font-size: clamp(15px, 4.2vw, 20px);
+    font-size: clamp(19px, 5.6vw, 25px);
     line-height: 1.5;
   }
-  .reveal-sign { margin-top: 16px; }
+  .reveal-sign { margin-top: 16px; font-size: clamp(15px, 4vw, 18px); }
   .replay {
     bottom: max(3%, env(safe-area-inset-bottom));
   }
