@@ -316,6 +316,20 @@ body {
   padding: 0 6%;
   pointer-events: none;
 }
+.reveal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 55% at 50% 50%, rgba(4,20,19,0.4) 0%, transparent 72%);
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.stage.opened .reveal::before {
+  opacity: 1;
+  transition-delay: 1.6s;
+}
 
 .reveal-pre {
   font-family: 'Cormorant Garamond', serif;
@@ -369,6 +383,10 @@ body {
   opacity: 0;
   transform: translateY(14px);
   max-width: 700px;
+}
+.reveal-sub .sub-line {
+  display: block;
+  text-wrap: balance;
 }
 .stage.opened .reveal-sub {
   animation: fadeUpIn 0.9s ease 3.3s forwards;
