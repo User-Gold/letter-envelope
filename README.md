@@ -1,4 +1,4 @@
-# Girlfriend Day — Love Letter Envelope Reveal
+# Something I Never Said — Love Letter Envelope Reveal
 
 A full-screen desktop animation: a wax-sealed envelope opens on click and reveals a big "I LOVE YOU" message, with falling hearts in the background throughout.
 
@@ -16,10 +16,10 @@ Keep all three files in the same folder — `index.html` loads the other two by 
 4. Use the **↺ replay** button (bottom center) to reset and watch it again — handy for re-recording takes.
 
 ## What happens
-1. "Happy Girlfriend Day" + a sweet invite line, envelope sits center screen with a soft glow.
+1. "Something I Never Said" + a quiet invite line, envelope sits center screen with a soft glow.
 2. Click the envelope → the gold wax seal cracks and fades, the flap swings open.
 3. The heading and envelope fade away, clearing the screen.
-4. A big gold-to-rose "I LOVE YOU" fades in center screen with a gentle heartbeat pulse, framed by a small line above and a handwritten line below.
+4. A big gold-to-rose "I LOVE YOU" fades in center screen with a gentle heartbeat pulse, framed by a small line above and a handwritten line below acknowledging her situation without expecting anything back.
 5. Hearts burst upward and continue falling in the background throughout.
 
 ## Customizing

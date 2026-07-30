@@ -7,7 +7,7 @@ const subline = document.getElementById('subline');
 const floatWrap = document.getElementById('floatHearts');
 const replayBtn = document.getElementById('replayBtn');
 
-const rainChars = ['&#10084;&#65039;', '&#128153;', '&#10024;'];
+const rainChars = ['&#10084;&#65039;', '&#128155;', '&#10024;'];
 
 function buildStars() {
   starsEl.innerHTML = '';
@@ -42,7 +42,7 @@ function burstHearts() {
   const timer = setInterval(() => {
     const h = document.createElement('div');
     h.className = 'fheart';
-    const chars = ['&#10084;&#65039;', '&#128153;', '&#10024;'];
+    const chars = ['&#10084;&#65039;', '&#128155;', '&#10024;'];
     h.innerHTML = chars[Math.floor(Math.random() * chars.length)];
     h.style.left = (30 + Math.random() * 40) + '%';
     h.style.setProperty('--drift', (Math.random() * 60 - 30) + 'px');
