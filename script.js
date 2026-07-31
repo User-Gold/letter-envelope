@@ -75,6 +75,7 @@ function resetAll() {
   buildRain();
   bgMusic.pause();
   bgMusic.currentTime = 0;
+  gate.classList.remove('hide');
 }
 
 function toggleMute() {
