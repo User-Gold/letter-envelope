@@ -6,6 +6,9 @@ const headingWrap = document.getElementById('headingWrap');
 const subline = document.getElementById('subline');
 const floatWrap = document.getElementById('floatHearts');
 const replayBtn = document.getElementById('replayBtn');
+const muteBtn = document.getElementById('muteBtn');
+const bgMusic = document.getElementById('bgMusic');
+const gate = document.getElementById('gate');
 
 const rainChars = ['&#10084;&#65039;', '&#128155;', '&#10024;'];
 
@@ -60,6 +63,7 @@ function openEnvelope() {
   envelopeWrap.classList.add('opened');
   subline.classList.add('hide');
   setTimeout(burstHearts, 1900);
+  bgMusic.play().catch(() => {});
 }
 
 function resetAll() {
@@ -69,10 +73,25 @@ function resetAll() {
   floatWrap.innerHTML = '';
   buildStars();
   buildRain();
+  bgMusic.pause();
+  bgMusic.currentTime = 0;
+}
+
+function toggleMute() {
+  bgMusic.muted = !bgMusic.muted;
+  muteBtn.classList.toggle('muted', bgMusic.muted);
+  muteBtn.innerHTML = bgMusic.muted ? '&#128263;' : '&#128266;';
+}
+
+function enterGate() {
+  gate.classList.add('hide');
+  bgMusic.play().catch(() => {});
 }
 
 envelopeWrap.addEventListener('click', openEnvelope);
 replayBtn.addEventListener('click', resetAll);
+muteBtn.addEventListener('click', toggleMute);
+gate.addEventListener('click', enterGate);
 
 buildStars();
 buildRain();

@@ -15,6 +15,10 @@
 <body>
 
   <div class="stage" id="stage">
+    <div class="gate" id="gate">
+      <div class="gate-text">tap to begin &#9825;</div>
+    </div>
+
     <div class="veins"></div>
     <div class="stars" id="stars"></div>
     <div class="rain" id="rain"></div>
@@ -60,8 +64,11 @@
 
     <div class="float-hearts" id="floatHearts"></div>
 
+    <button class="mute-btn" id="muteBtn" aria-label="Toggle music">&#128266;</button>
     <button class="replay" id="replayBtn">&#8635; replay</button>
   </div>
+
+  <audio id="bgMusic" src="song.mpeg" loop preload="auto"></audio>
 
   <script src="script.js"></script>
 
